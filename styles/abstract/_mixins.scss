@@ -1,0 +1,11 @@
+@mixin transition($duree : .1s, $effet : ease-in-out){
+    transition: $duree all $effet;
+}
+
+
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/loudovsky/19_Banjo.git
+git push -u origin main

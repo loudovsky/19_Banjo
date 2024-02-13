@@ -1,0 +1,29 @@
+.wrapper {
+    max-width:1000px;
+    margin:100px auto; 
+    h1 {
+        text-align: center;
+    }
+    .left {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
+        width: 50%;
+        .image {
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            @include transition;
+            &:hover {
+                @include transition;
+                transform: scale(1.2);
+            }
+        }
+        img {
+            max-width: 100px;
+            object-fit: cover;
+            height: 100px;
+            display: block;
+          }
+    }
+}
